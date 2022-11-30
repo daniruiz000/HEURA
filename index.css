@@ -9,6 +9,7 @@
         src: url(./assets/fonts/Heura.woff);
 }
 
+
     /*GENERICS*/
 
 
@@ -24,7 +25,9 @@ header{
     align-items: center;
     background-color:#f9e021 ;
     padding: 4rem;
+    min-height: 8rem;
 }
+
 
 
     /*RESPONSIVE DESIGN FOR +1024 AND -1024*/
