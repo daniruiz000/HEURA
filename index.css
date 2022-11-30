@@ -1,0 +1,90 @@
+
+
+
+
+    /*GENERICS*/
+
+
+html{
+    font-size: 18px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f9e021 ;
+    font-family: Heura;
+}
+
+
+    /*FONT*/
+
+
+@font-face {
+    font-family: Heura;
+    src: url(./assets/fonts/Heura.woff);
+}
+
+
+
+    /*RESPONSIVE DESIGN FOR +1024 AND -1024*/
+
+
+@media screen and  (max-width:1024px){  
+                                                /* ---------- //Para Movil.*/
+    header{
+       padding: 4rem;
+    }
+
+    .container{
+        display: none;
+        font-size: 1rem;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .icon{
+        font-size: 2rem;
+        border: none;
+        background-color: white;
+        border-radius: 35px;
+        padding: 0.5rem;
+    }
+    .icon:hover{
+        background-color: black;
+        color: white;
+    }
+}    
+
+
+
+@media screen and (min-width:1024px){     
+                                                    /*---------- //Para pantalla*/
+    header{
+        padding: 4rem;
+    }
+
+    .logo{
+        width: 75px;
+    }
+
+    .container-item{
+        display: inline-block;
+        list-style: none;
+        padding: 1rem;
+    }
+
+    .container-item:hover{
+        color: white;
+        text-decoration: underline;
+        transition: 1s;
+
+    }
+
+    .icon-container{
+        display: none;
+    }
+}
