@@ -14,7 +14,7 @@
 
 body{
     margin: 0;
-    font-size: 20px;  
+    font-size: 23px;  
     font-family: Heura;
 }
 
@@ -30,7 +30,7 @@ header{
     /*RESPONSIVE DESIGN FOR +1024 AND -1024*/
 
 
-@media screen and  (max-width:1024px){  
+@media screen and  (max-width:1023.9px){  
                                                 /* ---------- //Para Movil.*/
     .logo{
         width: 8rem;
@@ -67,6 +67,7 @@ header{
 
     .container{
         margin: 0;
+        padding: 0;
     }
 
     .container-item{
