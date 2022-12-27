@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía y el body para toda la web */
+body {
+  max-width: 1440px;
+  min-height: 100vh;
+  font-size: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 2em;
+  color: black;
+  background-color: #f9e021;
+  width: 100%;
+  min-height: 8em;
+}
+.header__logo {
+  width: 8em;
+  transition-duration: 0.1s;
+}
+.header__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: normal;
+  align-items: center;
+  width: 80%;
+}
+.header__item {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  min-width: 150px;
+}
+.header__item:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+  transition-duration: 1s;
+}
+.header__icon-item {
+  margin: 0;
+  padding: 0.5em;
+  color: black;
+  background-color: white;
+  font-size: 2em;
+  border-radius: 4em;
+  transition-duration: 0.1s;
+}
+.header__icon-item:hover {
+  color: white;
+  background-color: black;
+  transition-duration: 0.5s;
+}
+
+/*RESPONSIVE DESIGN FOR +1024 AND -1024*/
+@media screen and (max-width: 1023px) { /* ---------- //Para Movil.*/
+  .header__container {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) { /*---------- //Para pantalla grande*/
+  .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo {
+    width: 5rem;
+    transition-duration: 0.1s;
+  }
+  .header__icon {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+@mixin flex ($display:flex, $flex-flow:row nowrap, $justify-content:normal, $align-items:normal){
+    display: $display;
+    flex-flow: $flex-flow;
+    justify-content:$justify-content ;
+    align-items:$align-items;
+}
+
+@mixin spaceling ($margin:0, $padding:0){
+    margin: $margin;
+    padding:$padding;
+}
+
+@mixin colorized ($color:$color-secundary, $background-color: transparent){
+    color: $color;
+    background-color:$background-color;
+}

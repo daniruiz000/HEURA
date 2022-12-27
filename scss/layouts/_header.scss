@@ -1,0 +1,64 @@
+.header{
+    @include flex($justify-content:space-around, $align-items:center);
+    @include spaceling(0, 2em);
+    @include colorized($background-color:$color-principal);
+    width: 100%;
+    min-height: 8em;
+    &__logo{
+        width: 8em;
+        transition-duration: 0.1s;
+    }
+    &__container{
+        @include flex($align-items:center);
+        width: 80%;
+    }
+    &__item{
+        @include spaceling (0, 1em);
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        min-width:150px;
+        &:hover{
+            @include colorized($color-third);
+            text-decoration: underline;
+            transition-duration: 1s;
+        }
+    }
+
+    &__icon-item{
+        @include spaceling (0, 0.5em);
+        @include colorized($background-color:$color-third);
+        font-size: 2em;
+        border-radius: 4em;
+        transition-duration: 0.1s;
+        &:hover{
+            @include colorized($color-third, $color-secundary);
+            transition-duration: 0.5s;
+        }
+    }
+}
+
+/*RESPONSIVE DESIGN FOR +1024 AND -1024*/
+
+
+@media screen and  (max-width:1023px){ /* ---------- //Para Movil.*/
+    .header{
+        &__container{
+            display: none;
+        }
+    } 
+}   
+
+
+@media screen and (min-width:1024px){ /*---------- //Para pantalla grande*/
+    .header{
+        @include flex($justify-content: space-between, $align-items:center);
+        &__logo{
+            width: 5rem;
+            transition-duration: 0.1s;
+        }
+        &__icon{
+            display: none;
+        }
+    }
+}
