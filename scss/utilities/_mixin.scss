@@ -14,3 +14,11 @@
     color: $color;
     background-color:$background-color;
 }
+
+@mixin text-as($font-size:normal, $font-weight:normal, $text-decoration:none, $text-align:none, $font-style:none){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-decoration: $text-decoration;
+    text-align: $text-align;
+    font-style: $font-style;
+}

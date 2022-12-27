@@ -13,14 +13,12 @@
         width: 80%;
     }
     &__item{
-        @include spaceling (0, 1em);
-        text-align: center;
-        font-size: 1em;
-        font-weight: bold;
+        @include spaceling(0, 1em);
+        @include text-as(1em, bold, $text-align:center);
         min-width:150px;
         &:hover{
             @include colorized($color-third);
-            text-decoration: underline;
+            @include text-as($text-decoration: underliner);
             transition-duration: 1s;
         }
     }
@@ -28,7 +26,7 @@
     &__icon-item{
         @include spaceling (0, 0.5em);
         @include colorized($background-color:$color-third);
-        font-size: 2em;
+        @include text-as(2em);
         border-radius: 4em;
         transition-duration: 0.1s;
         &:hover{
